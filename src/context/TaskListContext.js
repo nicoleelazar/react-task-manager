@@ -1,5 +1,5 @@
 import React, { createContext, useState } from 'react';
-import TaskList from '../components/TaskList';
+import '../App.css'
 
 // create & export new context
 export const TaskListContext = createContext();
@@ -7,9 +7,9 @@ export const TaskListContext = createContext();
 // set initial state here
 const TaskListContextProvider = (props) => {
     const [tasks, setTasks] = useState([
-        { task: 'Read book', id: 1 },
-        { task: 'Grocery Shopping', id: 2 },
-        { task: 'write some code', id: 3 }
+        { title: 'Read book', id: 1 },
+        { title: 'Grocery Shopping', id: 2 },
+        { title: 'write some code', id: 3 }
     ])
 
 

@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 30px;
+    /* top: 0;
+    left: 0; */
+    background-color: antiquewhite;
+}
+
+.app-wrapper {
+    max-width: 40rem;
+    margin: auto;
+    padding: 15px;
+    background-color: rgb(61, 61, 61);
+    color: white;
+    border-radius: 6px;
+}
+
+.list-item {
+    list-style: none;
+    line-height: 2.3;
+    font-size: 18px;
+    /* background-color: teal; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.edit-btn {
+    background: none;
+    border: none;
+    width: 40px;
+    
+}
+
+.fas {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.fa-trash-alt {
+ color: rgb(238, 181, 181);
+}
+
+.fa-pencil-alt {
+    color: rgb(186, 236, 201);
+}
