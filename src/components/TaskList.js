@@ -6,12 +6,21 @@ const TaskList = () => {
     //desructure state from TaskListContext.js
     const { tasks } = useContext(TaskListContext)
     return (
-        <div >
-            <ul>
-                {tasks.map(taskItem => {
-                    return <Task key={taskItem.id} task={taskItem} />
-                })}
-            </ul>
+        <div className="main-list" >
+            {tasks.length ?
+                <ul>
+                    {tasks.map(taskItem => {
+
+                        return <Task key={taskItem.id} task={taskItem} />
+
+                    })}
+                </ul>
+                :
+                <div className="alert">You have no tasks</div>
+            }
+
+
+
         </div>
     )
 }

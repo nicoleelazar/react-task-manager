@@ -14,29 +14,83 @@ body {
     width: 100%;
     min-height: 100vh;
     padding-top: 30px;
-    /* top: 0;
-    left: 0; */
     background-color: antiquewhite;
 }
 
 .app-wrapper {
     max-width: 40rem;
     margin: auto;
-    padding: 15px;
+    padding: 15px 50px;
     background-color: rgb(61, 61, 61);
     color: white;
     border-radius: 6px;
 }
 
+.header {
+    text-align: center;
+    font-size: 23px;
+    color: rgb(112, 112, 112);
+    padding: 40px 0;
+}
+
+
+
+/* form */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-field {
+    width: 100%;
+    height: 35px;
+    background-color: rgb(112, 112, 112);
+    border-radius: 25px;
+    border: none;
+    color: thistle;
+    padding-left: 20px;
+    font-size: 16px;
+    
+}
+
+.button {
+    padding: 10px;
+    min-width: 7rem;
+    background-color: thistle;
+    border: none;
+    color: white;
+    margin: 8px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: rgb(214, 152, 214);
+}
+
+
+.alert {
+    font-size: 18px;
+    text-align: center;
+    color: rgb(112, 112, 112);
+}
+
+/* list items */
 .list-item {
     list-style: none;
     line-height: 2.3;
     font-size: 18px;
-    /* background-color: teal; */
     display: flex;
     align-items: center;
     justify-content: space-between;
     
+}
+
+.main-list {
+    padding: 50px 0;
 }
 
 .edit-btn {
@@ -52,9 +106,9 @@ body {
 }
 
 .fa-trash-alt {
- color: rgb(238, 181, 181);
+ color: tomato;
 }
 
 .fa-pencil-alt {
-    color: rgb(186, 236, 201);
+    color: white;
 }
