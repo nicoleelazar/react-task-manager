@@ -55,6 +55,10 @@ body {
     
 }
 
+.input-field:required {
+    box-shadow: none;
+}
+
 .button {
     padding: 10px;
     min-width: 7rem;
